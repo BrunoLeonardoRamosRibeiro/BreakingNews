@@ -6,7 +6,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.louzeiroribeiro.breakingnews.features.AboutScreen
+import androidx.navigation.compose.rememberNavController
+import com.louzeiroribeiro.breakingnews.navigation.HomeNavHost
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 
@@ -15,7 +16,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 fun App() {
     MaterialTheme {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-            AboutScreen()
+            HomeNavHost(navHostController = rememberNavController())
         }
     }
 }
