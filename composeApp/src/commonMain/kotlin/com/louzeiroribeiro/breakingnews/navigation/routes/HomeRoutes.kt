@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews.navigation
+package com.louzeiroribeiro.breakingnews.navigation.routes
 
 import kotlinx.serialization.Serializable
 

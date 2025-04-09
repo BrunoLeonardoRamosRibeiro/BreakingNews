@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews.features
+package com.louzeiroribeiro.breakingnews.features.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -35,14 +35,14 @@ private fun AboutComponent(
     Column(modifier = Modifier.padding(16.dp)) {
         Text(
             text = title,
-            color = Color.Red
+            color = Color.Black
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
             text = subtitle,
-            color = Color.Red
+            color = Color.Blue
         )
     }
 

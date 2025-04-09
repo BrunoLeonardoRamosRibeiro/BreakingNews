@@ -1,11 +1,13 @@
-package com.louzeiroribeiro.breakingnews.navigation
+package com.louzeiroribeiro.breakingnews.navigation.main
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.louzeiroribeiro.breakingnews.features.AboutScreen
+import com.louzeiroribeiro.breakingnews.features.about.AboutScreen
+import com.louzeiroribeiro.breakingnews.features.home.HomeScreen
+import com.louzeiroribeiro.breakingnews.navigation.routes.HomeRoutes
 
 @Composable
 fun HomeNavHost(
@@ -15,11 +17,15 @@ fun HomeNavHost(
 
     NavHost(
         navController = navHostController,
-        startDestination = HomeRoutes.About,
+        startDestination = HomeRoutes.Home,
         modifier = modifier
     ) {
         composable<HomeRoutes.About>{
             AboutScreen()
+        }
+
+        composable<HomeRoutes.Home>{
+            HomeScreen()
         }
     }
 }
