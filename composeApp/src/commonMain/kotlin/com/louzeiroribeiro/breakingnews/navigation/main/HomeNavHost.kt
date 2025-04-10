@@ -13,19 +13,27 @@ import com.louzeiroribeiro.breakingnews.navigation.routes.HomeRoutes
 fun HomeNavHost(
     modifier: Modifier = Modifier,
     navHostController: NavHostController
-){
+) {
 
     NavHost(
         navController = navHostController,
         startDestination = HomeRoutes.Home,
         modifier = modifier
     ) {
-        composable<HomeRoutes.About>{
-            AboutScreen()
+        composable<HomeRoutes.About> {
+            AboutScreen(
+                onBackPressed = {
+                    navHostController.popBackStack()
+                }
+            )
         }
 
-        composable<HomeRoutes.Home>{
-            HomeScreen()
+        composable<HomeRoutes.Home> {
+            HomeScreen(
+                navigateToAboutScreen = {
+                    navHostController.navigate(HomeRoutes.About)
+                }
+            )
         }
     }
 }
