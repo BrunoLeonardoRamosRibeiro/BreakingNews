@@ -53,7 +53,7 @@ private fun AboutComponent(
             color = Color.Blue
         )
     }
-    
+
     Spacer(modifier = Modifier.height(16.dp))
 
     Button(
@@ -67,7 +67,7 @@ private fun AboutComponent(
         modifier = Modifier.border(
             width = 2.dp,
             color = Color.Black,
-            shape = RoundedCornerShape(2.dp)
+            shape = RoundedCornerShape(3.dp)
         )
     ) {
         Text("Voltar")
