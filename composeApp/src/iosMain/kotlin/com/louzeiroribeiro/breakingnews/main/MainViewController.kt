@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews
+package com.louzeiroribeiro.breakingnews.main
 
 import androidx.compose.ui.window.ComposeUIViewController
 

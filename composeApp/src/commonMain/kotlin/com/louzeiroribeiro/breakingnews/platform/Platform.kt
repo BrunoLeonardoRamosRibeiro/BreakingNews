@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews
+package com.louzeiroribeiro.breakingnews.platform
 
 expect class Platform(){
     val osName: String

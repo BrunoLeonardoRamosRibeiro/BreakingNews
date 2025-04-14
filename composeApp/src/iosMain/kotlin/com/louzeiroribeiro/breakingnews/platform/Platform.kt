@@ -1,7 +1,6 @@
-package com.louzeiroribeiro.breakingnews
+package com.louzeiroribeiro.breakingnews.platform
 
 import platform.UIKit.UIDevice
-
 
 actual class Platform {
     actual  val osName: String

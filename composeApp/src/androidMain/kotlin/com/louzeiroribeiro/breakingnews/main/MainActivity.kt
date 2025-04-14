@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews
+package com.louzeiroribeiro.breakingnews.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

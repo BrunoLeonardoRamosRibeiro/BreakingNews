@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews
+package com.louzeiroribeiro.breakingnews.platform
 
 import android.os.Build
 
