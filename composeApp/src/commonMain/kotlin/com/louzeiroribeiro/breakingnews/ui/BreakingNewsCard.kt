@@ -2,6 +2,7 @@ package com.louzeiroribeiro.breakingnews.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -58,7 +59,8 @@ fun BreakingNewsCard(
             Column(
                 modifier = modifier
                     .fillMaxSize()
-                    .padding(16.dp)
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
                     text = title,
@@ -70,7 +72,7 @@ fun BreakingNewsCard(
 
                 Row(
                     modifier = modifier.fillMaxWidth()
-                ){
+                ) {
                     Text(
                         text = author,
                         fontSize = 16.sp,

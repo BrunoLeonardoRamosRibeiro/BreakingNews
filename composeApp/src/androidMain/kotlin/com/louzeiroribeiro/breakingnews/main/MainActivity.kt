@@ -38,12 +38,6 @@ fun ComponentsPreview() {
 
 @Preview
 @Composable
-fun MessageCardPreview() {
-    MessageCard(name = "Bruno")
-}
-
-@Preview
-@Composable
 fun AppAndroidPreview() {
     App()
 }
