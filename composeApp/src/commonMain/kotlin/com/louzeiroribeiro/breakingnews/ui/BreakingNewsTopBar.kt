@@ -47,7 +47,6 @@ fun BreakingNewsTopBar(
                 tint = Color.Black
             )
         }
-
     }
 
 }
