@@ -1,4 +1,4 @@
-package com.louzeiroribeiro.breakingnews.ui
+package com.louzeiroribeiro.breakingnews.ui.top
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable

@@ -6,8 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.louzeiroribeiro.breakingnews.ui.BreakingNewsCard
-import com.louzeiroribeiro.breakingnews.ui.BreakingNewsTopBar
+import com.louzeiroribeiro.breakingnews.ui.card.BreakingNewsCard
+import com.louzeiroribeiro.breakingnews.ui.top.BreakingNewsTopBar
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
