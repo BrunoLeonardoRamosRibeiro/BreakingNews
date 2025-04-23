@@ -3,10 +3,12 @@ package com.louzeiroribeiro.breakingnews.main
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.louzeiroribeiro.breakingnews.ui.card.BreakingNewsCard
+import com.louzeiroribeiro.breakingnews.ui.header.DetailsHeaderSection
 import com.louzeiroribeiro.breakingnews.ui.top.BreakingNewsTopBar
 
 class MainActivity : ComponentActivity() {
@@ -27,13 +29,18 @@ fun MessageCard(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun ComponentsPreview() {
-   BreakingNewsTopBar ( onClick = {})
+    Column {
+        BreakingNewsTopBar(onClick = {})
 
-    BreakingNewsCard(
-        title = "5 things to konw about the 'sex'",
-        author = "Matt Fox",
-        date = "Sunday, 9 may 2025"
-    )
+        BreakingNewsCard(
+            title = "5 things to konw about the 'sex'",
+            author = "Matt Fox",
+            date = "Sunday, 9 may 2025"
+        )
+
+        DetailsHeaderSection()
+    }
+
 }
 
 @Preview
